@@ -1,0 +1,14 @@
+func diagonalDifference(arr: [[Int]]) -> Int {
+    // Write your code here
+var x = 0, y = 0
+let count = arr.count
+
+for i in 0..<count {
+    x += arr[i][i]
+    y += arr[i][count - i - 1]
+}
+
+let resultDiff = abs(x-y)
+return resultDiff
+
+}
