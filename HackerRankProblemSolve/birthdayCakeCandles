@@ -1,1 +1,12 @@
+func birthdayCakeCandles(candles: [Int]) -> Int {
+    // Write your code here
 
+let maxval = candles.max()
+let largeNumberCount = candles.filter{$0 == maxval}
+print(largeNumberCount)
+
+return largeNumberCount
+
+}
+
+let count = birthdayCakeCandles(candles: [3,2,1,3])
