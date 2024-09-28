@@ -1,0 +1,5 @@
+func aVeryBigSum(ar: [Int]) -> Int {
+    // Write your code here
+ let sum = ar.compactMap{$0}.reduce(0, +)
+    return sum
+}
