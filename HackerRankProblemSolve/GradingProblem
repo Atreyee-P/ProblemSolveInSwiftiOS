@@ -1,0 +1,15 @@
+func gradingStudents(grades: [Int]) -> [Int] {
+    // Write your code here
+        var finalGrades = [Int]()
+            for grade in grades {
+                var newGrade = grade
+                let roundedGrade = ((grade / 5) + 1) * 5
+                
+                if (roundedGrade - grade) < 3 && grade >= 38 {
+                    newGrade = roundedGrade
+                }
+                
+                finalGrades.append(newGrade)
+            }
+            return finalGrades
+}
