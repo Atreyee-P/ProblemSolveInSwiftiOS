@@ -1,0 +1,10 @@
+func timeConversion(s: String) -> String {
+    // Write your code here
+    let formatter = DateFormatter()
+    formatter.dateFormat = "hh:mm:ssa"
+    let time = formatter.date(from: s)
+    
+    formatter.dateFormat = "HH:mm:ss"
+    let timeString = formatter.string(from: time ?? Date())
+    return timeString
+}
