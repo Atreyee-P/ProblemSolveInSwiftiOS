@@ -1,0 +1,18 @@
+func staircase(n: Int) -> Void {
+            // Write your code here
+            for i in 1...n {
+                    var tempString = ""
+                    for j in 1...n {
+                        if(n-j < i)
+                        {
+                            tempString += "#"
+                        }
+                        else
+                        {
+                            tempString += " "
+                        }
+                       
+                    }
+                    print(tempString)
+                }
+        }
